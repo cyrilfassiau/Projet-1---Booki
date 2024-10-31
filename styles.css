@@ -5,6 +5,9 @@
     
   }
 
+html { 
+ scroll-behavior: smooth;
+}
   
 a { 
     text-decoration: 0;
@@ -101,7 +104,8 @@ h1{
     display: flex;
     flex-direction: row;
     margin-top: 50px;
-    height: 70px;
+    width: 377px;
+    height: 49px;
    
 }
 
@@ -111,8 +115,9 @@ h1{
     border: 1px solid #0065FC;
     background-color: #0065FC;
     color: white    ;
-    width: 170px;
-    font-size: 25px;
+    width: 132px;
+    font-size: 15px;
+    font-weight: 700;
     
 }
 
@@ -142,11 +147,13 @@ input:focus {
     border-radius: 20px    0      0           20px;
     border-top: 13px solid #f2f2f2;
     border-bottom: 13px solid #f2f2f2;
-    border-left: 30px solid #f2f2f2;
-    border-right: 30px solid #f2f2f2;
-    font-size: 30px;
+    border-left: 15px solid #f2f2f2;
+    border-right: 15px solid #f2f2f2;
+    font-size: 20px;
     text-align: center;
-    padding-top: 8px;
+    padding-top: 3px;
+    
+    width: 50px;
     
 }
 
@@ -173,9 +180,11 @@ input:focus {
     border-radius: 50px;
     border:2px solid #d9d9d9;
     background-color: transparent;
-    padding: 15px;
+    padding: 4px 19px 4px 19px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 17px;
+    height: 50px;
+    width: 173px;
 }
 
 .filtresbtn:hover { 
@@ -404,6 +413,18 @@ input:focus {
   
 
 }
+
+.pop-cards{ 
+  background-color: #F2F2F2;
+  width: 429px;
+  height: 614px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+
+}
  .pop-card-1, .pop-card-2, .pop-card-3{ 
   display: flex;
   flex-direction: row;
@@ -559,4 +580,67 @@ display: flex;
 .txt {
   font-size: 16px;
   font-weight: 400;
+}
+
+
+@media (max-width: 1024px)  {
+
+  .wrap {
+    padding-left: 50px;
+    padding-right: 50px;
+    
+  }
+
+
+  .infos{ 
+   
+    flex-direction: column;
+    
+  }
+
+  .populaires{ 
+   
+    flex-direction: column;
+   
+      background-color: #F2F2F2;
+      width: 924px;
+      height: 252px;
+    
+      gap: 20px;
+      
+    
+   
+    
+  }
+
+  .pop-cards{ 
+    
+    flex-direction: row;
+    
+    
+  
+  }
+
+  .pop-card-1{ 
+  
+   
+    width: 274.67px;
+    height: 146px;
+    
+  }
+  .pop-card-2{ 
+  
+   
+    width: 274.67px;
+    height: 146px;
+    
+  }
+  .pop-card-3{ 
+  
+   
+    width: 274.67px;
+    height: 146px;
+    
+  }
+ 
 }
