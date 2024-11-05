@@ -1,6 +1,6 @@
 .wrap {
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
   font-family: "Raleway";
 }
 
@@ -19,7 +19,6 @@ a {
 nav {
   display: flex;
   gap: 40px;
-  padding-right: 60px;
 
   font-size: 16px;
   font-weight: 400;
@@ -28,6 +27,8 @@ nav {
 header {
   display: flex;
   justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 button {
@@ -35,8 +36,8 @@ button {
 }
 
 .logo {
-  width: 4%;
-  height: 4%;
+  width: 61.09px;
+  height: 19px;
 
   margin-top: 20px;
 }
@@ -68,6 +69,8 @@ button {
   flex-direction: column;
 
   padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .entete {
@@ -98,14 +101,18 @@ h1 {
   height: 49px;
 }
 
+.searchglass {
+  display: none;
+}
+
 .searchinp {
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 15px 15px 0;
   outline: none;
   border: 1px solid #0065fc;
   background-color: #0065fc;
   color: white;
   width: 132px;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -123,7 +130,7 @@ input {
   border-right: 0px solid #f2f2f2;
   border-left: 1px solid #f2f2f2;
   border-top: 1px solid #f2f2f2;
-  width: 270px;
+  width: 195px;
 }
 
 input:focus {
@@ -134,8 +141,7 @@ input:focus {
   border-radius: 20px 0 0 20px;
   border-top: 13px solid #f2f2f2;
   border-bottom: 13px solid #f2f2f2;
-  border-left: 15px solid #f2f2f2;
-  border-right: 15px solid #f2f2f2;
+
   font-size: 20px;
   text-align: center;
   padding-top: 3px;
@@ -148,7 +154,16 @@ input:focus {
   flex-direction: row;
   gap: 15px;
   padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
+
+.filtreboutons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
 .fontfiltre {
   text-align: justify;
   padding-top: 15px;
@@ -160,11 +175,22 @@ input:focus {
   border-radius: 50px;
   border: 2px solid #d9d9d9;
   background-color: transparent;
-  padding: 4px 19px 4px 19px;
+
   font-weight: 700;
   font-size: 17px;
   height: 50px;
   width: 173px;
+}
+
+.familial .filtresbtn {
+  width: 134px;
+}
+.romantique .filtresbtn {
+  width: 170px;
+}
+
+.pepites .filtresbtn {
+  width: 167px;
 }
 
 .filtresbtn:hover {
@@ -175,22 +201,37 @@ input:focus {
 .fa-person,
 .fa-heart,
 .fa-fire {
-  padding-right: 6px;
   color: #0065fc;
+  width: 22px;
+  height: 22px;
+  padding-right: 10px;
 }
 
 .petittexte {
   margin-top: 40px;
+  display: flex;
+  gap: 5px;
+  text-align: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
 }
-.fa-info {
+
+.i {
   border-radius: 50%;
   border: 2px solid #d9d9d9;
-  height: 28px;
-  width: 28px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+
+  justify-content: center;
+}
+
+.fa-info::before {
   text-align: center;
-  line-height: 27px;
+
   color: #0065fc;
-  margin-right: 20px;
+  font-size: 10px;
 }
 
 .infos {
@@ -198,6 +239,9 @@ input:focus {
   flex-direction: row;
   gap: 40px;
   margin-top: 50px;
+  width: 1340px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .cadrehebergements {
@@ -455,7 +499,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  padding: 30px;
+  padding: 50px;
 }
 
 .act-txt {
@@ -500,15 +544,27 @@ input:focus {
 footer {
   background-color: #f2f2f2;
   height: 163px;
-  width: 1340px;
+  width: 1300px;
   display: flex;
+  margin-left: 50px;
+  padding-right: 50px;
 }
 
 .footer-txt-1 {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  padding: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 446.67px;
+}
+
+.footer-txt-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  padding-top: 20px;
   width: 446.67px;
 }
 
@@ -529,8 +585,8 @@ footer {
   }
 
   header {
-    width: 1024px;
-    padding-right: 50px;
+    width: 100%;
+    padding: 0px;
     height: 79px;
   }
   .logo {
@@ -539,15 +595,27 @@ footer {
     padding-top: 30px;
   }
   nav {
-    width: 344px;
+    width: 244px;
     height: 35px;
     padding-left: 50px;
-    padding-right: 50px;
+    padding-right: 0px;
     gap: 68px;
+  }
+  .recherche {
+    padding-left: 0px;
+  }
+
+  .filtres {
+    padding-left: 0px;
+  }
+
+  .petittexte {
+    padding-left: 0px;
   }
 
   .infos {
     flex-direction: column;
+    padding-left: 0px;
   }
   .cadrehebergements {
     width: 924px;
@@ -592,12 +660,11 @@ footer {
   }
 
   .activites {
-    padding-top: 30px;
-    padding-left: 0;
+    margin: auto;
+    padding-left: 30px;
     padding-right: 0;
     width: 924px;
     height: 390.02px;
-    padding-left: 30px;
   }
   .act-cards {
     width: 864px;
@@ -611,6 +678,221 @@ footer {
   .act-card-img {
     width: 193.5px;
     height: 200px;
+  }
+
+  footer {
+    width: 924px;
+    height: 163px;
+    margin-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .wrap {
+    width: 100%;
+    padding: 0;
+  }
+  header {
+    width: 100%;
+
+    height: 115px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    width: 61.09px;
+    height: 19px;
+    padding-top: 30px;
+  }
+  nav {
+    width: 100%;
+    height: 36px;
+    padding: 0;
+    gap: 0px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .hébergements {
+    padding-top: 10px;
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+  }
+
+  .activités {
+    padding-top: 12px;
+    border-bottom: 2px solid #f2f2f2;
+  }
+  .i {
+    flex-shrink: 0;
+  }
+  .recherche {
+    padding-left: 20px;
+  }
+  .searchglass {
+    display: block;
+  }
+
+  .searchtxt {
+    display: none;
+  }
+  .inputrecherche {
+    width: 335px;
+  }
+
+  .searchinp {
+    border-radius: 15px;
+    width: 49px;
+    height: 49px;
+  }
+
+  .filtres {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .filtresbtn {
+    width: 162.5px;
+  }
+
+  .familial .filtresbtn {
+    width: 162.5px;
+  }
+
+  .romantique .filtresbtn {
+    width: 162.5px;
+  }
+
+  .pepites .filtresbtn {
+    width: 162.5px;
+  }
+
+  .filtreboutons {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .hébergements,
+  .activités {
+    flex: 1;
+    text-align: center;
+    width: 384px;
+    padding: 0;
+  }
+
+  .activités:hover,
+  .hébergements:hover {
+    border-top: 0px;
+    padding-top: 0px;
+
+    cursor: pointer;
+  }
+
+  .infos {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cadrehebergements {
+    width: 100%;
+    height: 1435.5px;
+    gap: 15px;
+    border-radius: 0px;
+    background-color: white;
+  }
+
+  .stats {
+    width: 100%;
+    height: 26px;
+    padding-right: 0px;
+    padding-left: 20px;
+  }
+  .infos {
+    flex-direction: column-reverse;
+  }
+
+  .hotels,
+  .hotels2 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hotel1,
+  .hotel2,
+  .hotel3,
+  .hotel4,
+  .hotel5,
+  .hotel6 {
+    height: 207.25px;
+    width: 335px;
+  }
+
+  .petittexte {
+    padding-left: 20px;
+  }
+  .populaires {
+    flex-direction: column;
+
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 569px;
+    gap: 20px;
+    border-radius: 0;
+  }
+
+  .pop-cards {
+    flex-direction: column;
+    width: 100%;
+    height: 569px;
+    gap: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .pop-card-1 {
+    width: 335px;
+    height: 146px;
+  }
+  .pop-card-2 {
+    width: 335px;
+    height: 146px;
+  }
+  .pop-card-3 {
+    width: 335px;
+    height: 146px;
+  }
+
+  .activites {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0;
+    width: 100%;
+    height: 965.02px;
+    margin-top: 35px;
+  }
+  .act-cards {
+    width: 100%;
+    height: 965.02px;
+    flex-direction: column;
+    margin-left: auto;
+    align-items: center;
+  }
+
+  .act-txt {
+    padding-left: 20px;
+  }
+
+  .card-txt-heb {
+    padding-left: 20px;
+  }
+  .act-card-1 {
+    width: 315px;
+    height: 200px;
+  }
+
+  .act-card-img {
+    width: 315px;
+    height: 141px;
   }
 
   footer {
