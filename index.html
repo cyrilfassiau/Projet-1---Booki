@@ -18,7 +18,7 @@
       <header>
         <img class="logo" src="/images/Booki.png" alt="Logo BOOKI" />
         <nav>
-          <a href="#" class="hébergements active">Hébergements</a>
+          <a href="#" class="hébergements">Hébergements</a>
           <a href="#activites" class="activités">Activités</a>
         </nav>
       </header>
@@ -30,36 +30,49 @@
         </div>
         <div class="inputrecherche">
           <i class="fa-solid fa-location-dot"></i>
-          <input type="search" />
-          <button class="searchinp">Rechercher</button>
+          <input type="search" placeholder="Marseille, France" />
+          <button class="searchinp">
+            <span class="searchtxt">Rechercher</span>
+            <span class="searchglass"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+          </button>
         </div>
       </div>
       <div class="filtres">
         <div class="fontfiltre">Filtres</div>
-        <div class="eco">
-          <button class="filtresbtn">
-            <i class="fa-solid fa-money-bill-wave"></i>Economique
-          </button>
+        <div class="filtreboutons">
+          <div class="filtresfirst">
+            <div class="eco">
+            <button class="filtresbtn">
+              <i class="fa-solid fa-money-bill-wave"></i>Economique
+            </button>
+          </div>
+          <div class="familial">
+            <button class="filtresbtn">
+              <i class="fa-solid fa-person"></i>Familial
+            </button>
+          </div>
         </div>
-        <div class="familial">
-          <button class="filtresbtn">
-            <i class="fa-solid fa-person"></i>Familial
-          </button>
+        <div class="filtressec">
+          <div class="romantique">
+            <button class="filtresbtn">
+              <i class="fa-solid fa-heart"></i>Romantique
+            </button>
+          </div>
+          <div class="pepites">
+            <button class="filtresbtn">
+              <i class="fa-solid fa-fire"></i>Nos Pépites
+            </button>
+          </div>
         </div>
-        <div class="romantique">
-          <button class="filtresbtn">
-            <i class="fa-solid fa-heart"></i>Romantique
-          </button>
-        </div>
-        <div class="pepites">
-          <button class="filtresbtn">
-            <i class="fa-solid fa-fire"></i>Nos Pépites
-          </button>
         </div>
       </div>
       <div class="petittexte">
-        <i class="fa-solid fa-info"></i> Plus de 500 logements sont disponibles
-        dans cette
+        <div class="i">
+          <i class="fa fa-info"></i>
+        </div>
+        Plus de 500 logements sont disponibles dans cette ville
       </div>
       <div class="infos">
         <div class="cadrehebergements" id="cadrehebergements">
@@ -376,7 +389,7 @@
           <div class="txt">Charte qualité</div>
           <div class="txt">Proposer votre hôtel</div>
         </div>
-        <div class="footer-txt-1">
+        <div class="footer-txt-2">
           <div class="footer-title">Assistance</div>
           <div class="txt">Centre d’aide</div>
           <div class="txt">Nous contacter</div>
