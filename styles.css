@@ -42,10 +42,7 @@ button {
   margin-top: 20px;
 }
 
-.hébergements {
-  padding-top: 10px;
-}
-
+.hébergements,
 .activités {
   padding-top: 12px;
 }
@@ -56,11 +53,6 @@ button {
   padding-top: 10px;
   color: #0065fc;
   cursor: pointer;
-}
-
-.active {
-  border-top: 2px solid #0065fc;
-  color: #0065fc;
 }
 
 .recherche {
@@ -91,6 +83,14 @@ h1 {
   font-weight: 400;
   font-size: 16px;
   line-height: 40px;
+}
+
+input::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.13px;
+  color: black;
+  text-align: center;
 }
 
 .inputrecherche {
@@ -594,6 +594,10 @@ footer {
     height: 19px;
     padding-top: 30px;
   }
+
+  .inputrecherche {
+    width: 377px;
+  }
   nav {
     width: 244px;
     height: 35px;
@@ -607,6 +611,8 @@ footer {
 
   .filtres {
     padding-left: 0px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .petittexte {
@@ -688,7 +694,7 @@ footer {
   }
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .wrap {
     width: 100%;
     padding: 0;
@@ -816,6 +822,8 @@ footer {
   .hotels2 {
     flex-direction: column;
     gap: 15px;
+    width: 100%;
+    
   }
 
   .hotel1,
@@ -825,7 +833,8 @@ footer {
   .hotel5,
   .hotel6 {
     height: 207.25px;
-    width: 335px;
+    width: 80%;
+    margin: auto;
   }
 
   .petittexte {
@@ -851,15 +860,15 @@ footer {
   }
 
   .pop-card-1 {
-    width: 335px;
+    width: 80%;
     height: 146px;
   }
   .pop-card-2 {
-    width: 335px;
+    width: 80%;
     height: 146px;
   }
   .pop-card-3 {
-    width: 335px;
+    width: 80%;
     height: 146px;
   }
 
@@ -879,6 +888,11 @@ footer {
     align-items: center;
   }
 
+  .act-cards a {
+    width: 100%;
+    
+  }
+
   .act-txt {
     padding-left: 30px;
   }
@@ -887,12 +901,13 @@ footer {
     padding-left: 20px;
   }
   .act-card-1 {
-    width: 315px;
+    width: 80%;
     height: 200px;
+    margin: auto;
   }
 
   .act-card-img {
-    width: 315px;
+    width: 100%;
     height: 141px;
   }
   .afficher {
