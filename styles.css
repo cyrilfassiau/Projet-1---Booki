@@ -145,7 +145,7 @@ input:focus {
   font-size: 20px;
   text-align: center;
   padding-top: 3px;
-
+flex-shrink: 0;
   width: 50px;
 }
 
@@ -158,6 +158,11 @@ input:focus {
   padding-right: 50px;
 }
 
+.filtresfirst, .filtressec {
+  display: flex;
+  height: 50px;
+  gap: 15px;
+}
 .filtreboutons {
   display: flex;
   flex-direction: row;
@@ -734,6 +739,7 @@ footer {
   }
   .recherche {
     padding-left: 20px;
+    padding-right: 20px;
   }
   .searchglass {
     display: block;
@@ -743,7 +749,18 @@ footer {
     display: none;
   }
   .inputrecherche {
-    width: 335px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+
+  input {
+    width: 100%;
+  }
+
+  input::placeholder {
+    width: 100%;
   }
 
   .searchinp {
@@ -751,6 +768,8 @@ footer {
     width: 49px;
     height: 49px;
     box-shadow: 0px 4px 4px 0px #00000040;
+    margin-left: -15px;
+    flex-shrink: 0;
   }
 
   .filtres {
@@ -760,20 +779,26 @@ footer {
     gap: 20px;
   }
 
+
+  .filtresfirst, .filtressec {
+    width: 100%;
+  }
+
   .filtresbtn {
-    width: 162.5px;
+    width: 100%;
   }
 
+  .eco, .familial, .romantique, .pepites {
+    width: 100%;
+  }
   .familial .filtresbtn {
-    width: 162.5px;
+    width: 100%;
   }
-
   .romantique .filtresbtn {
-    width: 162.5px;
+    width: 100%;
   }
-
   .pepites .filtresbtn {
-    width: 162.5px;
+    width: 100%;
   }
 
   .filtreboutons {
