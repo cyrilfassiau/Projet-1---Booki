@@ -602,6 +602,13 @@ footer {
   .petittexte {
     padding-left: 0px;
   }
+  .activités:hover,
+  .hébergements:hover {
+    border-top: 2px solid #0065fc;
+    padding-top: 10px;
+    color: #0065fc;
+    cursor: pointer;
+  }
 
   .infos {
     flex-direction: column;
@@ -945,7 +952,7 @@ footer {
   }
 
   .card-txt-heb {
-    padding-left: 20px;
+    padding-left: 0px;
   }
   .act-card-1 {
     width: 80%;
